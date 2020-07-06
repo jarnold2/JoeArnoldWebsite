@@ -1,0 +1,24 @@
+<div>
+  <!-- <img class="board" src="../../assets/tttboard.png"> -->
+    <div class="flex-container">
+      <button class="button" [disabled]="button1Clicked" (click)="clickSquare(1)">{{button1Text}}</button>
+      <button class="button" [disabled]="button2Clicked" (click)="clickSquare(2)">{{button2Text}}</button>
+      <button class="button" [disabled]="button3Clicked" (click)="clickSquare(3)">{{button3Text}}</button>
+    </div>
+    <div class="flex-container">
+      <button class="button" [disabled]="button4Clicked" (click)="clickSquare(4)">{{button4Text}}</button>
+      <button class="button" [disabled]="button5Clicked" (click)="clickSquare(5)">{{button5Text}}</button>
+      <button class="button" [disabled]="button6Clicked" (click)="clickSquare(6)">{{button6Text}}</button>
+    </div>
+    <div class="flex-container">
+      <button class="button" [disabled]="button7Clicked" (click)="clickSquare(7)">{{button7Text}}</button>
+      <button class="button" [disabled]="button8Clicked" (click)="clickSquare(8)">{{button8Text}}</button>
+      <button class="button" [disabled]="button9Clicked" (click)="clickSquare(9)">{{button9Text}}</button>
+    </div>
+</div>
+
+<div style="padding: 5px">
+  <button (click)="reset()">Reset</button> |
+  Turns: {{turns}} |
+  {{winnerLabel}}
+</div>
